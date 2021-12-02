@@ -1,10 +1,14 @@
+# /**
+#  * @author Megha Nagabhushan
+#  */
+
 def get_file_lines_as_list(filename):
     """Return a list where each element is a line in the file."""
     with open("1/"+filename) as file:
         lines = file.readlines()
         lines = [line.rstrip() for line in lines]
     return lines
-input_list = get_file_lines_as_list("2/input1.txt")
+input_list = get_file_lines_as_list("input1.txt")
 
 def get_horizontal_vertical_depth(input_list):
     horizontal = 0
