@@ -5,7 +5,7 @@ import pandas as pd
 
 def get_file_lines_as_list(filename):
     """Return a list where each element is a line in the file."""
-    with open("Advent_of_code-2021/4/"+filename) as file:
+    with open("4/"+filename) as file:
         lines = file.readlines()
         lines = [line.rstrip() for line in lines]
     return lines
