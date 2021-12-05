@@ -4,7 +4,7 @@
 
 def get_file_lines_as_list(filename):
     """Return a list where each element is a line in the file."""
-    with open("1/"+filename) as file:
+    with open("2/"+filename) as file:
         lines = file.readlines()
         lines = [line.rstrip() for line in lines]
     return lines
