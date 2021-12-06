@@ -11,6 +11,11 @@ def get_file_lines_as_list(filename):
         lines = [line.rstrip() for line in lines]
     return lines
 
+def get_file_lines_as_list2(filename):
+    """Return a list where each element is a line in the file."""
+    return [line.rstrip() for line in open("5/"+filename)]
+
+
 def rolling_window(input_list, window):
     """Return a list containing arrays grouped according to a rolling window"""
     a = np.array(input_list)
